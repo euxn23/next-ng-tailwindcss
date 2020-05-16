@@ -1,0 +1,25 @@
+{
+  "devDependencies": {
+    "prettier": "^2.0.5",
+    "ts-node": "^8.10.0"
+  },
+  "name": "next-ng-tailwindcss",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "ssh://git@github.com/euxn23/next-ng-tailwindcss.git",
+  "author": "euxn23 <euxn23@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "next",
+    "build": "rm -rf .next out && next build",
+    "export": "npm run build && next export"
+  },
+  "dependencies": {
+    "@types/node": "^13.13.4",
+    "@types/react": "^16.9.35",
+    "next": "^9.4.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "typescript": "^3.8.3"
+  }
+}
