@@ -10,16 +10,19 @@
   "author": "euxn23 <euxn23@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "next",
-    "build": "rm -rf .next out && next build",
-    "export": "npm run build && next export"
+    "start": "next & ngtw watch",
+    "build": "ngtw build && rm -rf .next out && next build",
+    "export": "npm run build && next export",
+    "prestart": "ngtw build"
   },
   "dependencies": {
     "@types/node": "^13.13.4",
     "@types/react": "^16.9.35",
     "next": "^9.4.0",
+    "ng-tailwindcss": "^2.2.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "tailwindcss": "^1.4.6",
     "typescript": "^3.8.3"
   }
 }
